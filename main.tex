@@ -1,0 +1,200 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Remi Guan} \\ \vspace{1pt}
+    \href{mailto:casimir.crystal.blue@outlook.com}{casimir.crystal.blue@outlook.com} $|$
+    \href{https://github.com/remi-crystal}{\underline{github.com/remi-crystal}}
+    % {\underline{x.x.com}} $|$ 
+    % \href{https://linkedin.com/in/x}{\underline{linkedin.com/in/x}} $|$
+    
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Web developer}{May 2021 – Present}
+      {Qiubi Tech, Ltd}{Shanghai, China}
+      \resumeItemListStart
+        \resumeItem{Developed web pages and backend in React and NestJs}
+        \resumeItem{Managed the servers}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------STUDY-----------
+\section{Study}
+  \resumeSubHeadingListStart
+  
+      \resumeProjectHeading
+          {\textbf{Data Structures And 
+Algorithms} $|$ \emph{Java}}{August 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Learn about basic algorithm and data structure, such as array, list, tree}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{CS 61A} $|$ \emph{Python}}{March 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Learn about the essence of functional programming, such as abstraction, higher order function, recursion}
+          \resumeItemListEnd  
+          
+      \resumeProjectHeading
+          {\textbf{Human resource machine} $|$ \emph{Game}}{December 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Learn about how a register machine work, and how to program it with assembly}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Meta Signature Util} $|$ \emph{TypeScript}}{November 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Sign articles and media with curve25519}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Meta UCenter} $|$ \emph{Nest.js}}{July 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Backend for users signup and login used in our company project}
+          \resumeItemListEnd
+         
+      \resumeProjectHeading
+          {\textbf{Meta CMS} $|$ \emph{React}}{August 2021 -- November 2021}
+          \resumeItemListStart
+            \resumeItem{Frontend for users to create a blog and manage their account }
+          \resumeItemListEnd
+            
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+     \item{
+     Basic algorithm,
+     Functional programming}
+     \\
+     \item{JavaScript, TypeScript, Python3, Latex} \\
+     \item{HTML, CSS, React, Vue, Next.js, Nest.js} \\
+    }
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
